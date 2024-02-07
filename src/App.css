@@ -42,14 +42,14 @@
 } */
 .card-image {
   height: auto;
-  width: 100px;
+  width: 95px;
   border-radius: 50%;
   display: flex;
   margin: 10px;
 }
 
 .reset-button {
-  margin-top: 30px;
+  margin-top: 35px;
   padding: 10px 20px;
   background-color: #ffda46;
   color: rgb(85, 85, 191);
