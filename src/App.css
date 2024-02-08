@@ -9,15 +9,6 @@
 }
 
 .card-container {
-  /* display: grid;
-  gap: 1rem;
-  grid-auto-rows: 9rem;
-  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); */
-
-  /* display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;*/
-
   display: grid;
   grid-template-columns: 15% 15% 15% 15% 15% 15%;
   justify-content: space-evenly;
@@ -32,14 +23,6 @@
   transform: scale(1.1);
 }
 
-/* .card-image {
-  height: 125px;
-  width: 150px;
-  border-radius: 50%;
-  display: flex;
-  margin: auto;
-  margin-top: 8px;
-} */
 .card-image {
   height: auto;
   width: 90px;
@@ -108,8 +91,8 @@
   }
 
   .card-image {
-    height: 40px;
-    width: 55px;
+    height: auto;
+    width: 60px;
     border-radius: 50%;
     display: flex;
     margin: 10px;
