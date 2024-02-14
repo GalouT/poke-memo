@@ -79,7 +79,7 @@
     width: 100vw;
     height: 75vh;
 
-    margin-top: 0;
+    margin: 10px;
   }
   .card {
     display: inline-block;
@@ -100,7 +100,7 @@
 
   .winner .text {
     background: #111;
-    height: 250px;
+    height: 100%;
     width: 270px;
     border: 2px solid #eee;
     border-radius: 10px;
