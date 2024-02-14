@@ -9,9 +9,9 @@ import imageTitle from "/src/images/6543d0e84fd8dd7b77f40a5e907f7581.png";
 function App() {
   const [guessed, setGuessed] = useState([]);
   const [selected, setSelected] = useState([]);
-
   const [timerRunning, setTimerRunning] = useState(false);
   const [seconds, setSeconds] = useState(0);
+  const [initialOrder, setInitialOrder] = useState([...IMAGES]);
 
   useEffect(() => {
     if (selected.length === 1) {
@@ -51,21 +51,20 @@ function App() {
   }, [guessed]);
 
   const handleReset = () => {
-    location.reload();
     setGuessed([]);
     setSelected([]);
-
     setTimerRunning(false);
     setSeconds(0);
+    setInitialOrder([...initialOrder].sort(() => Math.random() - 0.5));
   };
 
   return (
     <div className="app">
       <div>
-        <img className="title" src={imageTitle} />
+        <img className="title" src={imageTitle} alt="Title" />
       </div>
       <div className="card-container">
-        {IMAGES.map((image, index) => {
+        {initialOrder.map((image, index) => {
           const [, url] = image.split("|");
           return guessed.length === IMAGES.length ? (
             <WinnerModal
